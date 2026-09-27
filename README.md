@@ -236,6 +236,8 @@ This deletes all hotels **and bookings**, then inserts 9 fictional hotels across
 
 After the first Vercel deploy, set `CLIENT_URL` on Render to the Vercel URL (no trailing slash) so CORS allows it.
 
+**Auto-deploy:** both hosts are connected to this GitHub repo. Every push to `main` redeploys the backend on Render (when `server/` changes) and the frontend on Vercel (root directory `client`).
+
 ## Security notes
 
 - Passwords are hashed with bcrypt and never returned by the API (`select: false`).
