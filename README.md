@@ -2,8 +2,8 @@
 
 > Find a stay that fits your journey.
 
-**Live demo:** _coming soon_  
-**API:** _coming soon_
+**Live demo:** https://staysphere-lovat.vercel.app  
+**API:** https://staysphere-api-s6h8.onrender.com/api/hotels (free Render instance, first request after idle can take ~50s)
 
 ## About
 
@@ -226,8 +226,8 @@ This deletes all hotels **and bookings**, then inserts 9 fictional hotels across
 
 | Part     | Host          | URL |
 | -------- | ------------- | --- |
-| Frontend | Vercel        |     |
-| Backend  | Render        |     |
+| Frontend | Vercel        | https://staysphere-lovat.vercel.app |
+| Backend  | Render        | https://staysphere-api-s6h8.onrender.com |
 | Database | MongoDB Atlas | –   |
 
 **Render (backend)** — New Web Service → root directory `server`, build `npm install`, start `npm start`. Environment: `MONGO_URI`, `JWT_SECRET`, `NODE_ENV=production`, `CLIENT_URL`. Run `npm run seed` once (Render Shell, or locally with the Atlas `MONGO_URI`).
